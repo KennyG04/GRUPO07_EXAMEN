@@ -1,0 +1,255 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.rounded, .rounded-circle, .rounded-pill, .card, .dropdown-menu, .form-control, .btn, .sidebar, .bg-white, .sticky-footer {
+    border-radius: 0 !important;
+}
+
+.shadow, .shadow-sm, .shadow-lg, .topbar {
+    box-shadow: none !important;
+}
+
+.btn, .sidebar .nav-item .nav-link, .sidebar .sidebar-brand, 
+h1, h2, h3, h4, h5, h6, pre {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.bg-gradient-primary {
+    background-color: #000 !important;
+    background-image: none !important;
+}
+
+.sidebar-dark .nav-item .nav-link {
+    color: #ccc; 
+}
+.sidebar-dark .nav-item.active .nav-link {
+    color: #fff;
+    font-weight: 700;
+    background-color: #333; 
+}
+.sidebar-dark .sidebar-brand {
+     color: #fff;
+}
+.sidebar-dark .sidebar-divider {
+    border-top: 1px solid #333;
+}
+
+.btn-primary {
+     background-color: #000 !important;
+     border-color: #000 !important;
+     color: #FFF !important;
+}
+.btn-primary:hover {
+     background-color: #333 !important;
+     border-color: #333 !important;
+}
+
+.navbar-center, .navbar-center .navbar-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000 !important; 
+    line-height: 4.375rem; 
+    padding-top: 2px;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.content-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 1px solid #000; 
+}
+
+.content-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important; 
+}
+
+.content-card .card-title,
+.content-card h2,
+.content-card h5 { 
+    color: #4e73df;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif; 
+}
+
+.content-card ul {
+    list-style: none; 
+    padding-left: 10px;
+}
+
+.content-card ul li {
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 0.75rem; 
+    font-size: 1rem;
+    color: #000; 
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700; 
+}
+
+.content-card ul li::before {
+    content: '\f00c'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #000; 
+}
+
+.topbar .nav-item .nav-link {
+    color: #000; 
+}
+.topbar .nav-item .nav-link .small {
+    color: #000 !important; 
+    font-weight: 700; 
+}
+.topbar .nav-item .nav-link:hover,
+.topbar .nav-item .nav-link:hover .small {
+    color: #5a5a5a; 
+}
+
+.container-fluid .text-center .h1 {
+    font-family: 'Roboto Mono', monospace !important;
+    color: #000000 !important; 
+}
+.container-fluid .text-center .lead {
+    color: #858796; 
+}
+
+.container-fluid > h1.h3 {
+    text-align: center !important;
+    color: #000000 !important; 
+    font-family: 'Roboto Mono', monospace !important;
+    text-transform: uppercase;
+}
+
+.card-header h6 {
+    color: #000000 !important; 
+    font-weight: 700 !important;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+/* Estilos para los paneles */
+.panel {
+    border: 2px solid #000;
+    border-radius: 0;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.panel:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.panel-heading {
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+}
+
+.panel-title {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+.panel-1 .panel-heading {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.panel-2 .panel-heading {
+    background-color: #000000;
+    color: #fff;
+}
+
+.panel-3 .panel-heading {
+    background-color: #000000;
+    color: #fff;
+}
+
+.panel-4 .panel-heading {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Estilos específicos para panel-4 */
+.panel-4 {
+    height: 100%;
+}
+
+.panel-4 .panel-body {
+    height: calc(100vh);
+    min-height: 400px;
+    padding: 0;
+    position: relative;
+}
+
+.panel-4 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+/* Contenedor responsivo para videos (mantiene relación 16:9) */
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-responsive video,
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hacer imágenes dentro de los paneles responsivas */
+.panel-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Utilidad global para cualquier imagen que necesite ser responsiva */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos del acordeón dentro de panel-2 */
+.panel-2 .accordion-button {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+}
+.panel-2 .accordion-button:not(.collapsed) {
+    background-color: #222;
+    color: #fff;
+}
+.panel-2 .accordion-body {
+    background-color: #fff;
+    color: #000;
+}
+.panel-2 .img-responsive {
+    border: 1px solid #e6e6e6;
+    padding: 6px;
+    background: #fafafa;
+}
+.exec {
+    justify-content: center;
+}
