@@ -141,21 +141,31 @@
                                             <h3 class="panel-title">Teoria</h3>
                                         </div>
                                         <div class="panel-body">
-                                                                                        Un panel es un contenedor visual que agrupa y organiza contenido relacionado en una interfaz de usuario. Generalmente, los paneles tienen un encabezado que describe su propósito y un cuerpo que contiene el contenido principal. Los paneles son útiles para dividir la información en secciones manejables, mejorando la legibilidad y la navegación dentro de una aplicación o sitio web. 
-                                            <br>
-                                            Este panel es un ejemplo de panel simple con un encabezado y un cuerpo.
-                                            <br>
-                                            Para construir un panel html con bootstrap se utiliza la clase <code>.panel</code> junto con otras clases adicionales para definir el estilo y la estructura del panel como lo es el <code>.panel-heading</code> para el encabezado o titulo del panel y el <code>.panel-body</code> en donde va el contenido tambien la clase <code>.panel-footer</code> para el pie del panel.
-                                            <br>
-                                            Ademas existen 5 tipos de paneles segun el uso o finalidad:
-                                            <ul>
-                                                <li>Panel por defecto: <code>.panel-default</code></li>
-                                                <li>Panel de informacion: <code>.panel-info</code></li>
-                                                <li>Panel de exito: <code>.panel-success</code></li>
-                                                <li>Panel de advertencia: <code>.panel-warning</code></li>
-                                                <li>Panel de error: <code>.panel-danger</code></li>
-                                            </ul>
-                                            
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>Un panel es un contenedor visual que agrupa y organiza contenido relacionado en una interfaz de usuario. Generalmente, los paneles tienen un encabezado que describe su propósito y un cuerpo que contiene el contenido principal. Los paneles son útiles para dividir la información en secciones manejables, mejorando la legibilidad y la navegación dentro de una aplicación o sitio web.</p>
+                                                    <p>Este panel es un ejemplo de panel simple con un encabezado y un cuerpo.</p>
+                                                    <p>Para construir un panel html con bootstrap se utiliza la clase <code>.panel</code> junto con otras clases adicionales para definir el estilo y la estructura del panel como lo es el <code>.panel-heading</code> para el encabezado o titulo del panel y el <code>.panel-body</code> en donde va el contenido tambien la clase <code>.panel-footer</code> para el pie del panel.</p>
+                                                    <p>Ademas existen 5 tipos de paneles segun el uso o finalidad:</p>
+                                                    <ul>
+                                                        <li>Panel por defecto: <code>.panel-default</code></li>
+                                                        <li>Panel de informacion: <code>.panel-info</code></li>
+                                                        <li>Panel de exito: <code>.panel-success</code></li>
+                                                        <li>Panel de advertencia: <code>.panel-warning</code></li>
+                                                        <li>Panel de error: <code>.panel-danger</code></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                    <div class="video-responsive" style="width:100%; max-width:560px;">
+                                                        <iframe src="video/Capítulo 7 - Paneles.mp4" 
+                                                                title="Video explicativo sobre paneles en Bootstrap"
+                                                                frameborder="0" 
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                                allowfullscreen>
+                                                        </iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div id="panelCarousel" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#panelCarousel" data-bs-slide-to="0" class="active"></button>
@@ -326,19 +336,6 @@
                                             <h3 class="panel-title">Ejemplo</h3>
                                         </div>
                                         <div class="panel-body">
-                                            <h4 class="text-center mb-4">Video Explicativo</h4>
-                                            <p>Este video demuestra como se estructura un panel basico desde su cabecera hasta su cuerpo y pie de pagina, ademas de los estilos mencionados anteriormente y contenido anidado como listas y tablas</p>
-                                            <div class="video-responsive">
-                                                <iframe width="560" 
-                                                        height="315" 
-                                                        src="video/Capítulo 7 - Paneles.mp4" 
-                                                        title="Video explicativo sobre paneles en Bootstrap"
-                                                        frameborder="0" 
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                                        allowfullscreen>
-                                                </iframe>
-                                            </div>
-
                                             <div class="example-panels mt-4">
                                             <h4 class="text-center mb-4">Ejemplos de código</h4>
 
@@ -487,12 +484,54 @@
                                     <h3 class="panel-title">Ejercicio</h3>
                                 </div>
                                 <div class="panel-body">
-                                    <iframe src="https://kennyg04.github.io/PruebaParte2G9/"
-                                            width="100%"
-                                            height="100%"
-                                            frameborder="0"
-                                            style="border: none;">
-                                    </iframe>
+                                    <!-- Primera fila: texto a la izquierda, imagen a la derecha -->
+                                    <!-- Ejemplo 1: texto izquierda, imagen derecha -->
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-6">
+                                            <p>En este ejemplo se usa un panel por default y su codigo demuestra tanto la cabecera del panel <code>.panel-heading</code> para su titulo el cual es la materia y en su cuerpo se encuentran los integrantes.</p>
+                                        </div>
+                                        <div class="col-md-6 text-center">
+                                            <img src="img/ejemplo1.png" alt="ejemplo 1" class="img-fluid">
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 2: imagen izquierda, texto derecha (en móvil texto primero) -->
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-6 order-2 order-md-1 text-center">
+                                            <img src="img/ejemplo 2.png" alt="ejemplo 2" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6 order-1 order-md-2">
+                                            <p>Ahora en esta otra parte se tiene un video representativo embebido dentro del panel, utilizando un iframe para incrustar un video de youtube o una página web externa.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 3: texto izquierda, imagen derecha -->
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-6">
+                                            <p>En este otro ejemplo tenemos el login ingresando en el enlace comandante donde se muestra el login y el formulario esta dentro del panel en donde el titulo del panel demuestra tanto un texto como un glyphicon.</p>
+                                        </div>
+                                        <div class="col-md-6 text-center">
+                                            <img src="img/ejemplo3.png" alt="ejemplo 3" class="img-fluid">
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo 4: imagen izquierda, texto derecha (en móvil texto primero) -->
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-6 order-2 order-md-1 text-center">
+                                            <img src="img/ejemplo4.png" alt="Ejemplo 4" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6 order-1 order-md-2">
+                                            <p>Finalmente tenemos el ejemplo de una tabla dentro del desplegable y grupo 9 en donde se abre otra pagina y muestra la tabla anidada dentro del panel con su respectivo titulo.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Video / iframe responsive bajo el contenido -->
+                                    <div class="video-responsive">
+                                        <iframe src="https://kennyg04.github.io/PruebaParte2G9/"
+                                                title="Ejercicio embebido"
+                                                frameborder="0"
+                                                allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>

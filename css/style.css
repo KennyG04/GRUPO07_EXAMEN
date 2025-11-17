@@ -139,10 +139,13 @@ h1, h2, h3, h4, h5, h6, pre {
     border: 2px solid #000;
     border-radius: 0;
     transition: box-shadow 0.3s ease-in-out;
-    margin-bottom: 30px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .panel:hover {
@@ -182,38 +185,32 @@ h1, h2, h3, h4, h5, h6, pre {
 /* Estilos específicos para panel-4 */
 .panel-4 {
     margin-bottom: 30px;
+    width: 100%;
 }
 
+/* Panel-4: contenido con altura automática para texto e imágenes */
 .panel-4 .panel-body {
-    height: 600px;
-    max-height: 600px;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
+    padding: 15px;
+    height: auto;
 }
 
 .panel-4 p {
-    padding: 15px;
-    margin: 0;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #e6e6e6;
+    margin: 0 0 12px 0;
+    color: #222;
 }
 
 .panel-4 img {
     max-width: 100%;
     height: auto;
     display: block;
-    padding: 10px;
-    background-color: #fff;
+    padding: 0;
+    background-color: transparent;
 }
 
+/* Si hay iframes, la clase .video-responsive controla el tamaño responsive */
 .panel-4 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     border: none;
+    width: 100%;
 }
 
 /* Contenedor responsivo para videos (mantiene relación 16:9) */
@@ -368,9 +365,22 @@ h1, h2, h3, h4, h5, h6, pre {
 }
 
 .example-panel {
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+}
+
+.example-panel .panel-body {
+    padding: 0;
+}
+
+.example-panel .video-responsive,
+.example-panel iframe,
+.example-panel video {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .carousel-control-prev,
@@ -495,4 +505,5 @@ h1, h2, h3, h4, h5, h6, pre {
 
 .panel-body {
     padding: 3%;
+    
 }
